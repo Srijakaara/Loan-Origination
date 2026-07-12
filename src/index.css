@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Brand — indigo primary (aligned with investmentservicing.kaara.ai) */
+  --color-navy-950: #1e1b4b;
+  --color-navy-900: #6366f1;
+  --color-navy-800: #4f46e5;
+  --color-navy-700: #4338ca;
+  --color-navy-600: #4f46e5;
+  --color-navy-500: #6366f1;
+  --color-navy-100: #e0e7ff;
+  --color-navy-50: #eef2ff;
+
+  /* Accent/CTA — same indigo family as brand, matching the reference's single-hue accent */
+  --color-orange-600: #4f46e5;
+  --color-orange-500: #6366f1;
+  --color-orange-400: #818cf8;
+  --color-orange-100: #e0e7ff;
+  --color-orange-50: #eef2ff;
+
+  /* Status semantics — emerald/amber/rose, matching the reference design system */
+  --color-green-800: #047857;
+  --color-green-700: #059669;
+  --color-green-100: #ecfdf5;
+  --color-amber-800: #b45309;
+  --color-amber-700: #d97706;
+  --color-amber-100: #fffbeb;
+  --color-red-800: #be123c;
+  --color-red-700: #e11d48;
+  --color-red-100: #fff1f2;
+
+  /* Chart categorical — indigo shade ramp plus status hues (validated) */
+  --color-viz-1: #4338ca;
+  --color-viz-2: #6366f1;
+  --color-viz-3: #818cf8;
+  --color-viz-4: #a5b4fc;
+  --color-viz-5: #10b981;
+  --color-viz-6: #f59e0b;
+}
+
+:root {
+  --surface: #ffffff;
+  --surface-2: #fafafb;
+  --ink: #18181b;
+  --ink-2: #52525b;
+  --ink-muted: #71717a;
+  --border: #ececf1;
+  --radius: 0.25rem;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --surface: #3730a3;
+  --surface-2: #1e1b4b;
+  --ink: #ffffff;
+  --ink-2: #c7cdf9;
+  --ink-muted: #a5b4fc;
+  --border: #4338ca;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--surface-2);
+  color: var(--ink);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-navy-100);
+  border-radius: 8px;
+}
