@@ -107,7 +107,7 @@ export default function Replay() {
                   <CardTitle>Documents at time of decision</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <DocumentViewer documents={selected.documents} applicantName={selected.applicantName} />
+                  <DocumentViewer documents={selected.documents} applicantName={selected.applicant.name} />
                 </CardContent>
               </Card>
 

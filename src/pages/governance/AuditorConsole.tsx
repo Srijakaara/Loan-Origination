@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
 import { StatusBadge, stageLabel } from '@/components/shared/StatusBadges'
 import { useApplicationStore } from '@/store/applicationStore'
 import { formatCurrency, formatDate, cn } from '@/lib/utils'
-import { Search, FileSearch } from 'lucide-react'
+import { Search, FileSearch, X } from 'lucide-react'
 
 type CardFilter = 'all' | 'overrides'
 

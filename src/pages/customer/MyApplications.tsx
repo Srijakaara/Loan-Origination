@@ -48,7 +48,7 @@ export default function MyApplications() {
                 <CardContent className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   <div>
                     <div className="mb-2 text-left text-xs font-semibold uppercase tracking-wide text-[var(--ink-muted)]">Documents</div>
-                    <DocumentViewer documents={app.documents} applicantName={app.applicantName} />
+                    <DocumentViewer documents={app.documents} applicantName={app.applicant.name} />
                   </div>
                   <div>
                     <div className="mb-2 text-left text-xs font-semibold uppercase tracking-wide text-[var(--ink-muted)]">Status History</div>

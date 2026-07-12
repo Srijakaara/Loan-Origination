@@ -227,8 +227,9 @@ export default function AdminConsole() {
                 <CardTitle>Model Release Gates</CardTitle>
                 <Info
                   className="h-3.5 w-3.5 text-[var(--ink-muted)]"
-                  title="Before a model can make real underwriting decisions, its outputs are checked against cases already decided by senior human underwriters. Model card, bias report, and rollback plan must all be in place before approval."
-                />
+                >
+                  <title>Before a model can make real underwriting decisions, its outputs are checked against cases already decided by senior human underwriters. Model card, bias report, and rollback plan must all be in place before approval.</title>
+                </Info>
               </div>
             </CardHeader>
             <CardContent>

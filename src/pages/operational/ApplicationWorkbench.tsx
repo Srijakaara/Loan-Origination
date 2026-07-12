@@ -159,7 +159,7 @@ export default function ApplicationWorkbench() {
               <CardTitle>Documents</CardTitle>
             </CardHeader>
             <CardContent>
-              <DocumentViewer documents={application.documents} applicantName={application.applicantName} />
+              <DocumentViewer documents={application.documents} applicantName={application.applicant.name} />
             </CardContent>
           </Card>
         </div>
